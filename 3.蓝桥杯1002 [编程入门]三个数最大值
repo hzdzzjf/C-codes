@@ -47,3 +47,4 @@ int main()
     	scanf("%d%d",&a,&b); //scanf("%d %d",&a,&b);也可
     	printf("%d",a+b);
     }
+!!!
