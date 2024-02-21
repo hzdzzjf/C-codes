@@ -47,6 +47,3 @@ int main()
     	scanf("%d%d",&a,&b); //scanf("%d %d",&a,&b);也可
     	printf("%d",a+b);
     }
-2.关于ASCII码:
-    见补充资料2.
-    
