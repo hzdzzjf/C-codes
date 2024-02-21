@@ -36,3 +36,17 @@ int main()
     printf("%d\n",m);
     return 0;
 }
+
+笔记:
+1.关于scanf:
+   在程序中,scanf的两个或更多%d可以连写而不影响录入.用"%d%d"和"%d %d"的实际效果相同
+    #include<stdio.h>
+    int main()
+    {
+    	int a,b;
+    	scanf("%d%d",&a,&b); //scanf("%d %d",&a,&b);也可
+    	printf("%d",a+b);
+    }
+2.关于ASCII码:
+    见补充资料2.
+    
