@@ -1,4 +1,5 @@
 #include "snake.h"
+#include <stdlib.h>
 int main() {
 	srand((unsigned int)time(0));			 //生成随机数种子
 	int end = 1, result;
