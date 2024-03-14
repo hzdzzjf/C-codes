@@ -47,6 +47,23 @@ void Hide() {
 	CONSOLE_CURSOR_INFO cor_info = { 1, 0 };
 	SetConsoleCursorInfo(hout, &cor_info);
 }
+/*隐藏光标更严谨的代码:
+void Hide() {
+	CONSOLE_CURSOR_INFO cor_info;
+	cor_info.dwSize = 1;		// 设置光标大小为最小（100%中的1%）  
+	cor_info.bVisible = FALSE;		// 隐藏光标  
+
+	HANDLE hout = GetStdHandle(STD_OUTPUT_HANDLE);
+	if (hout == INVALID_HANDLE_VALUE) {
+		fprintf(stderr, "获取控制台输出句柄失败。\n");		// 处理获取句柄失败的情况  
+	}
+
+	if (!SetConsoleCursorInfo(hout, &cor_info)) {
+		DWORD error = GetLastError();
+		fprintf(stderr, "设置控制台光标信息失败，错误代码: %lu\n", error);		// 处理错误  
+	}
+}
+*/
 
 
 /*关于菜单实现*/
