@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <conio.h>
 #include <time.h>
+#include <stdlib.h>
 
 /*宏定义*/
 #define MAP_HEIGHT 20	//定义地图高度
